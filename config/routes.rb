@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     namespace 'plugins' do
       namespace 'camaleon_user_tag' do
         get 'index' => 'admin#index'
+        get 'tags' => 'tags#list'
       end
     end
   end

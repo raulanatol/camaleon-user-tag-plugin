@@ -15,7 +15,15 @@
     ],
     "on_upgrade": [
       "camaleon_user_tag_on_upgrade"
+    ],
+    "user_update_more_actions": [
+      "user_tag_more_actions"
+    ],
+    "user_edit": [
+      "user_tag_on_user_edit"
+    ],
+    "user_after_edited": [
+      "user_after_edited"
     ]
-    //here you can add all your hooks (read documentation)
   }
 }
