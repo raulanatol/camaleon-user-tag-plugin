@@ -1,0 +1,21 @@
+{
+  "title": "User Tag",
+  "descr": "",
+  "version": "0.1",
+  "key": "camaleon_user_tag",
+  "helpers": [
+    "Plugins::CamaleonUserTag::MainHelper"
+  ],
+  "hooks": {
+    "on_active": [
+      "camaleon_user_tag_on_active"
+    ],
+    "on_inactive": [
+      "camaleon_user_tag_on_inactive"
+    ],
+    "on_upgrade": [
+      "camaleon_user_tag_on_upgrade"
+    ]
+    //here you can add all your hooks (read documentation)
+  }
+}
