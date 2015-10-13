@@ -16,8 +16,8 @@
     "on_upgrade": [
       "camaleon_user_tag_on_upgrade"
     ],
-    "user_update_more_actions": [
-      "user_tag_more_actions"
+    "user_update_more_actions_form": [
+      "user_update_more_actions_form"
     ],
     "user_edit": [
       "user_tag_on_user_edit"

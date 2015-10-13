@@ -32,8 +32,8 @@ module Plugins::CamaleonUserTag::MainHelper
   def camaleon_user_tag_on_upgrade(plugin)
   end
 
-  def user_tag_more_actions(plugin)
-    plugin[:html] = render 'plugins/camaleon_user_tag/admin/update_user_more_actions', f: plugin[:f]
+  def user_update_more_actions_form(plugin)
+    plugin[:html] << render('plugins/camaleon_user_tag/admin/update_user_more_actions', f: plugin[:f])
   end
 
 

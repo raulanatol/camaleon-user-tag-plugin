@@ -7,7 +7,7 @@ require 'camaleon_user_tag/version'
 Gem::Specification.new do |s|
   s.name = 'camaleon_user_tag'
   s.version = CamaleonUserTag::VERSION
-  s.authors = ['Raúl Anatol']
+  s.authors = ['raulanatol']
   s.email = ['raul@natol.es']
   s.homepage = 'http://camaleon.tuzitio.com/store/plugins/13'
   s.summary = 'Plugin of CamaleonCMS to allow tag users'
