@@ -10,7 +10,7 @@ module Plugins::CamaleonUserTag::MainHelper
   def camaleon_user_tag_on_active(plugin)
     unless ActiveRecord::Base.connection.column_exists? 'users', :tags
       ActiveRecord::Base.connection.change_table 'users' do |t|
-        t.text :tags, array: true
+        t.text :tags, array: true, default: []
       end
     end
 
@@ -44,7 +44,7 @@ module Plugins::CamaleonUserTag::MainHelper
 
   def user_after_edited(plugin)
     user = plugin[:user]
-    old_tags = user.tags
+    old_tags = user.tags.nil? ? [] : user.tags
     new_tags = plugin[:params][:tags].split(',')
 
     # to_remove_tags = old_tags - new_tags
