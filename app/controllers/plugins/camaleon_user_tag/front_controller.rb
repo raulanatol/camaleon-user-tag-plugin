@@ -1,4 +1,4 @@
-class Plugins::CamaleonUserTag::FrontController < Apps::PluginsFrontController
+class Plugins::CamaleonUserTag::FrontController < CamaleonCms::Apps::PluginsFrontController
   include Plugins::CamaleonUserTag::MainHelper
   def index
     # actions for frontend module

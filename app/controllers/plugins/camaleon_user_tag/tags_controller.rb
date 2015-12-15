@@ -1,4 +1,4 @@
-class Plugins::CamaleonUserTag::TagsController < Apps::PluginsFrontController
+class Plugins::CamaleonUserTag::TagsController < CamaleonCms::Apps::PluginsFrontController
   include Plugins::CamaleonUserTag::MainHelper
 
 
